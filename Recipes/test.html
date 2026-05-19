@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Gallery</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #fff8f0;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            color: #d2691e;
+        }
+
+        .recipes {
+            display: flex; /* horizontal layout */
+            justify-content: center; /* center the row */
+            gap: 20px; /* space between items */
+            margin-top: 30px;
+            flex-wrap: wrap; /* wrap on small screens */
+        }
+
+        .recipe-link {
+            text-decoration: none;
+            color: #333;
+            border: 2px solid #d2691e;
+            border-radius: 8px;
+            overflow: hidden;
+            width: 200px; /* fixed width for all items */
+            transition: transform 0.2s;
+        }
+
+        .recipe-link:hover {
+            transform: scale(1.05);
+        }
+
+        .recipe-link img {
+            width: 100%;
+            display: block;
+            border-bottom: 2px solid #d2691e;
+        }
+
+        .recipe-link p {
+            margin: 0;
+            padding: 10px;
+            background-color: #fdf6e3;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Recipe Gallery</h1>
+    <div class="recipes">
+        <a href="recipe1.html" class="recipe-link">
+            <img src="cookie.jpg" alt="Chocolate Chip Cookies">
+            <p>Chocolate Chip Cookies</p>
+        </a>
+        <a href="recipe2.html" class="recipe-link">
+            <img src="spaghetti.jpg" alt="Spaghetti Bolognese">
+            <p>Spaghetti Bolognese</p>
+        </a>
+        <a href="recipe3.html" class="recipe-link">
+            <img src="banana-bread.jpg" alt="Banana Bread">
+            <p>Banana Bread</p>
+        </a>
+    </div>
+</body>
+</html>

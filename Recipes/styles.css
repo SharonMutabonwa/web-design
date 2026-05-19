@@ -1,0 +1,70 @@
+/* Styles */
+h1 {
+    text-align: center;
+}
+
+img{
+    width: 300px;
+    height: auto;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #fff8f0;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #d2691e;
+}
+
+#description {
+    margin-top: 70;
+}
+
+article {
+    display: flex;               /* horizontal layout */
+    justify-content: center;     /* center the row */
+    gap: 100px;                   /* space between recipe cards */
+    flex-wrap: wrap;             /* wrap on small screens */
+    margin-top: 150px;
+}
+
+article a {
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+    width: 300px;                /* fixed width for each recipe card */
+    transition: transform 0.2s;
+}
+
+article a:hover {
+    transform: scale(1.05);
+}
+
+article a img {
+    width: 100%;                 /* make image fill card width */
+    display: block;
+    border-bottom: 2px solid #d2691e;
+}
+
+article a p {
+    margin: 20;
+    padding: 10px;
+    background-color: #fdf6e3;
+    font-weight: bold;
+}
+
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #d2691e;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-left: 0;
+}

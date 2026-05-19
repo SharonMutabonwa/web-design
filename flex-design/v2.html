@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Landing Page</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Roboto, sans-serif;
+}
+
+body {
+  line-height: 1.5;
+}
+
+/* HEADER */
+header {
+  background: #1F2937;
+  padding: 20px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo {
+  color: #F9FAF8;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav a {
+  color: #E5E7EB;
+  margin-left: 20px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+/* HERO */
+.hero {
+  background: #1F2937;
+  color: #F9FAF8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 80px 10%;
+  gap: 40px;
+}
+
+.hero h1 {
+  font-size: 48px;
+  font-weight: 900;
+}
+
+.hero p {
+  margin: 15px 0;
+  color: #E5E7EB;
+  font-size: 18px;
+}
+
+button {
+  background: #3882F6;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero figure {
+  width: 500px;
+  height: 250px;
+  background: #6B7280;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+/* INFO */
+.info {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.info h2 {
+  font-size: 36px;
+  font-weight: 900;
+  color: #1F2937;
+  margin-bottom: 40px;
+}
+
+.info-grid {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+article.card {
+  width: 150px;
+}
+
+.card figure {
+  width: 150px;
+  height: 150px;
+  border: 3px solid #3882F6;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+/* QUOTE */
+blockquote {
+  background: #E5E7EB;
+  padding: 80px 20%;
+  font-style: italic;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1F2937;
+}
+
+blockquote cite {
+  display: block;
+  text-align: right;
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 20px;
+}
+
+/* CTA */
+.cta {
+  margin: 60px 10%;
+  background: #3882F6;
+  color: white;
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cta h3 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.cta p {
+  color: #E5E7EB;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  background: #1F2937;
+  color: #E5E7EB;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">Header Logo</div>
+  <nav aria-label="Main navigation">
+    <a href="#">header link one</a>
+    <a href="#">header link two</a>
+    <a href="#">header link three</a>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section class="hero">
+    <article>
+      <h1>This website is awesome</h1>
+      <p>This website has some subtext that goes here under the main title. It's a smaller font and the color is lower contrast.</p>
+      <button>Sign up</button>
+    </article>
+
+    <figure role="img" aria-label="Image placeholder">
+      this is a placeholder for an image
+    </figure>
+  </section>
+
+  <!-- INFO -->
+  <section class="info">
+    <h2>Some random information.</h2>
+
+    <div class="info-grid">
+
+      <article class="card">
+        <figure></figure>
+        <p>this is some subtext under an illustration or image</p>
+      </article>
+
+      <article class="card">
+        <figure></figure>
+        <p>this is some subtext under an illustration or image</p>
+      </article>
+
+      <article class="card">
+        <figure></figure>
+        <p>this is some subtext under an illustration or image</p>
+      </article>
+
+      <article class="card">
+        <figure></figure>
+        <p>this is some subtext under an illustration or image</p>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- QUOTE -->
+  <section>
+    <blockquote>
+      This is an inspiring quote, or a testimonial from a customer. Maybe it’s just filling up space, or maybe people will actually read it. Who knows? All I know is that it looks nice.
+      <cite>-Thor, God of Thunder</cite>
+    </blockquote>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <div>
+      <h3>Call to action! It's time!</h3>
+      <p>Sign up for our product by clicking that button right over there!</p>
+    </div>
+    <button>Sign up</button>
+  </section>
+
+</main>
+
+<footer>
+  Copyright © The Odin Project 2021
+</footer>
+
+</body>
+</html>
