@@ -1,0 +1,152 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 35%;
+  background-image: url("images/halie-west-25xggax4bSA-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.logo-section {
+  margin-top: 150px;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo-section img {
+  height: 100px;
+}
+
+.logo-section h1 {
+  color: white;
+  font-size: 5rem;
+  font-family: "Norse", serif;
+}
+
+.credit {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  text-align: center;
+  color: white;
+}
+
+.main-content {
+  flex: 1;
+  background: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.intro {
+  padding: 2rem 3rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.intro p:last-child {
+  margin-top: 2rem;
+}
+
+.form-section {
+  background: white;
+  padding: 2rem 3rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 250px);
+  gap: 1rem 4rem;
+  margin-top: 1.5rem;
+}
+
+label {
+  display: block;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+}
+
+input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #E5E7EB;
+  border-radius: 4px;
+}
+
+input:focus {
+  outline: none;
+  border: 1px solid blue;
+  box-shadow: 0 0 5px rgba(0,0,255,0.3);
+}
+
+input:user-invalid {
+  border: 1px solid red;
+}
+
+.button-section {
+  padding: 2rem 3rem;
+}
+
+button {
+  background: #596D48;
+  color: white;
+  border: none;
+  padding: 12px 48px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+.button-section p {
+  margin-top: 1.5rem;
+}
+
+.button-section a {
+  color: #596D48;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "Norse";
+  src: url("fonts/Norsebold.otf");
+}
+
+/* .intro,
+.form-section,
+.button-section {
+    padding: 2rem 3rem;
+}
+
+.intro p:last-child {
+    margin-top: 1.5rem;
+}
+
+button {
+    margin-bottom: 1.5rem;
+} */
