@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #e5e7eb;
+  min-height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 250px 1fr;
+  grid-template-rows: 170px 1fr;
+  min-height: 100vh;
+
+  grid-template-areas:
+    "sidebar header"
+    "sidebar main";
+}
+
+/* Sidebar */
+
+.sidebar {
+  grid-area: sidebar;
+  background: #1992d4;
+  color: white;
+  padding: 20px;
+
+  display: grid;
+  grid-template-rows: auto auto 1fr;
+  gap: 40px;
+}
+
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Header */
+
+.header {
+  grid-area: header;
+  background: white;
+  padding: 20px 40px;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 20px;
+}
+
+.search input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  background: #e2e8f0;
+}
+
+.user-top {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 15px;
+}
+
+.user-top img {
+  border-radius: 50%;
+}
+
+.welcome {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.welcome img {
+  border-radius: 50%;
+}
+
+.actions {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 20px;
+}
+
+.actions button {
+  padding: 10px 25px;
+  border: none;
+  border-radius: 20px;
+  background: #1992d4;
+  color: white;
+  cursor: pointer;
+}
+
+/* Main Content */
+
+.main-content {
+  grid-area: main;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+/* Projects */
+
+.projects h2 {
+  margin-bottom: 15px;
+}
+
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  border-left: 8px solid orange;
+  border-radius: 8px;
+  padding: 25px;
+  min-height: 200px;
+
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Right Panel */
+
+.right-panel {
+  display: grid;
+  gap: 20px;
+}
+
+.announcement-box,
+.trending-box {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.announcement-box hr {
+  margin: 15px 0;
+}
